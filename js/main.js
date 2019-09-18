@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
   $('.menu-toggler').on('click', function(){
     $(this).toggleClass('open');
     $('.top-nav').toggleClass('open');
@@ -21,7 +22,10 @@ $(document).ready(function(){
     $('html, body').animate({
       keyframes: {
         scrollTop: 0
-      }, options: 2000
+      },
+      options: {
+        duration: 2000
+      }
     });
   });
 
@@ -30,4 +34,5 @@ $(document).ready(function(){
     duration: 1800,
     once: true
   });
+
 });
